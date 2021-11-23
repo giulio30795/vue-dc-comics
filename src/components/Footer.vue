@@ -51,7 +51,24 @@
             </div>
         </div>
         <section class="social">
-            social
+            <div class="container flex">
+                <div>
+                <div class="sign-up">Sign-Up Now!</div>
+            </div>
+            <div class="follow flex">
+                <div>
+                follow us
+                </div>
+                <div>
+                    <img src="../assets/footer-facebook.png" alt="">
+                    <img src="../assets/footer-twitter.png" alt="">
+                    <img src="../assets/footer-youtube.png" alt="">
+                    <img src="../assets/footer-pinterest.png" alt="">
+                    <img src="../assets/footer-periscope.png" alt="">
+                </div>
+            </div>
+            </div>
+            
         </section>
     </section>
     
@@ -89,8 +106,33 @@ section{
         margin: 10px 0;
     }
 }
+img{
+    width: 70%;
+}
 .social{
-    background-color: grey;
+    background-color: #303030;
+    opacity: 1;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.sign-up{
+    border: 1px solid #1373BB;
+    padding: 10px;
+    color: #fff
+}
+.follow{
+    color: #1373BB;
+    text-transform: uppercase;
     
+    img{
+        max-width: 30px;
+        max-height: 30px;
+        margin: 0.2rem;
+    }
+    div {
+        align-self: center;
+        margin-right: 10px;
+        font-weight: bold;
+    }
 }
 </style>
