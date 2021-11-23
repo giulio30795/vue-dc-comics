@@ -48,7 +48,6 @@
             </div>
             <div class="right-container">
                 <img src="../assets/dc-logo-bg.png" alt="">
-                d
             </div>
         </div>
     </section>
