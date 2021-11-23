@@ -21,5 +21,6 @@ section {
     font-size: 3rem;
     color: #fff;
     padding: 1rem;
+    text-align: center;
 }
 </style>

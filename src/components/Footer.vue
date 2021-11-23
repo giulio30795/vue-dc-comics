@@ -1,5 +1,6 @@
 <template>
-    <section>
+<div>
+    <section class="bg">
         <div class="container flex">
             <div class="left-container flex">
                 <div>
@@ -50,8 +51,9 @@
                 d
             </div>
         </div>
+    </section>
         <section class="social">
-            <div class="container flex">
+            <div class="container middle flex">
                 <div>
                 <div class="sign-up">Sign-Up Now!</div>
             </div>
@@ -68,9 +70,10 @@
                 </div>
             </div>
             </div>
-            
         </section>
-    </section>
+</div>
+    
+    
     
 </template>
 
@@ -83,17 +86,17 @@ export default {
 <style lang="scss" scoped>
 @import '@/styles/general';
 
-section{
+section.bg{
     background-image: url('../assets/footer-bg.jpg');
     background-size:cover ;
 }
 
-.container{
+.middle{
     justify-content: space-between;
 }
 .left-container{
     div {
-        padding: 20px 20px;
+        padding: 20px 20px 20px 0;
     }
     h3 {
         color: white;
@@ -106,24 +109,33 @@ section{
         margin: 10px 0;
     }
 }
-img{
-    width: 70%;
+.right-container{
+    position: relative;
+        img{
+            position: absolute;
+            top: 10px;
+            left:300px;
+            max-width: 400px;
+            height: 400px;
+        }
 }
+
 .social{
     background-color: #303030;
-    opacity: 1;
     justify-content: space-between;
     padding: 20px 0;
+    position: relative;
+    
 }
 .sign-up{
     border: 1px solid #1373BB;
     padding: 10px;
-    color: #fff
+    color: #fff;
+    box-sizing: border-box;
 }
 .follow{
     color: #1373BB;
     text-transform: uppercase;
-    
     img{
         max-width: 30px;
         max-height: 30px;
