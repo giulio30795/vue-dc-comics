@@ -5,44 +5,33 @@
             <div class="left-container flex">
                 <div>
                     <ul>
-                        <li><h3>Titolo</h3></li>
-                        <li><a href="">Contenuto</a></li>
-                        <li><a href="">Contenuto</a></li>
-                        <li><a href="">Contenuto</a></li>
-                        <li><a href="">Contenuto</a></li>
-                        <li><a href="">Contenuto</a></li>
-                        <li><a href="">Contenuto</a></li>
-                        <li><a href="">Contenuto</a></li>
+                        <li><h3>DC Comics</h3></li>
+                        <li v-for="(element, index) in footer1" :key="`list-${index}`">
+                            <a href="">{{element.text}}</a>
+                        </li>
                     </ul>
                     <ul>
-                        <li><h3>Titolo</h3></li>
-                        <li><a href="">Contenuto</a></li>
-                        <li><a href="">Contenuto</a></li>
+                        <li><h3>Shop</h3></li>
+                        <li v-for="(element, index) in footer2" :key="`list2-${index}`">
+                            <a href="">{{element.text}}</a>
+                        </li>
+                        
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li><h3>Titolo</h3></li>
-                        <li><a href="">Contenuto</a></li>
-                        <li><a href="">Contenuto</a></li>
-                        <li><a href="">Contenuto</a></li>
-                        <li><a href="">Contenuto</a></li>
-                        <li><a href="">Contenuto</a></li>
-                        <li><a href="">Contenuto</a></li>
-                        <li><a href="">Contenuto</a></li>
-                    </ul>
-                    <ul>
-                        <li><h3>Titolo</h3></li>
-                        <li><a href="">Contenuto</a></li>
-                        <li><a href="">Contenuto</a></li>
+                        <li><h3>DC</h3></li>
+                        <li v-for="(element, index) in footer3" :key="`list2-${index}`">
+                            <a href="">{{element.text}}</a>
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li><h3>Titolo</h3></li>
-                        <li><a href="">Contenuto</a></li>
-                        <li><a href="">Contenuto</a></li>
-                        <li><a href="">Contenuto</a></li>
+                        <li><h3>Sites</h3></li>
+                        <li v-for="(element, index) in footer4" :key="`list-${index}`">
+                            <a href="">{{element.text}}</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -72,13 +61,25 @@
         </section>
 </div>
     
-    
-    
 </template>
 
 <script>
+
+import Footer1 from '@/data/Footer1.js';
+import Footer2 from '@/data/Footer2.js';
+import Footer3 from '@/data/Footer3.js';
+import Footer4 from '@/data/Footer4.js';
+
 export default {
-    name: 'Footer'
+    name: 'Footer',
+    data() {
+        return {
+            footer1: Footer1,
+            footer2: Footer2,
+            footer3: Footer3,
+            footer4: Footer4,
+        }
+    }
 }
 </script>
 
@@ -127,7 +128,7 @@ section.bg{
     
 }
 .sign-up{
-    border: 1px solid #1373BB;
+    border: 1px solid #0D7CEC;
     padding: 10px;
     color: #fff;
     box-sizing: border-box;

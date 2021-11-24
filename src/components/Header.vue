@@ -11,14 +11,14 @@
 
 <script>
 
-import Headerlist from '@/data/headerList.js';
+import menulist from '@/data/MenuList.js';
 
 export default {
     name: 'Header',
 
     data(){
         return {
-            menuElements: HeaderList,
+            menuElements: menulist,
         };
     },
 }
@@ -41,14 +41,20 @@ ul {
     li {
         display: flex;
         align-items: center;
-        margin: 0 20px;
+        margin: 0 10px;
         height: 100%;
         border-bottom: 4px solid transparent;
+        text-transform: uppercase;
+        font-size: .8rem;
+        a {
+            color: #464646;
+            font-weight: 600;
+        }
         }
     }
 li:hover{
 color: blue;
-border-bottom: 4px solid blue;
+border-bottom: 4px solid #1373BB;
 }
 
 img {
