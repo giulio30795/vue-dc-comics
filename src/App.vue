@@ -20,6 +20,7 @@ export default {
     Content,
     Footer,
   }
+
 }
 </script>
 

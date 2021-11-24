@@ -2,43 +2,25 @@
   <div class="container flex">
       <img src="@/assets/dc-logo.png" alt="">
       <ul class="flex">
-          <li>
-              <a href="#">TEST</a>
+          <li v-for="(element, index) in menuElements" :key="`element-${index}`">
+              <a href="#">{{element.text}}</a>
           </li>
-          <li>
-              <a href="#">TEST</a>
-          </li>
-          <li>
-              <a href="#">TEST</a>
-          </li>
-          <li>
-              <a href="#">TEST</a>
-          </li>
-          <li>
-              <a href="#">TEST</a>
-          </li>
-          <li>
-              <a href="#">TEST</a>
-          </li>
-          <li>
-              <a href="#">TEST</a>
-          </li>
-          <li>
-              <a href="#">TEST</a>
-          </li>
-          <li>
-              <a href="#">TEST</a>
-          </li>
-          <li>
-              <a href="#">TEST</a>
-          </li>
-      </ul>
+        </ul>
   </div>
 </template>
 
 <script>
+
+import Headerlist from '@/data/headerList.js';
+
 export default {
     name: 'Header',
+
+    data(){
+        return {
+            menuElements: HeaderList,
+        };
+    },
 }
 </script>
 
