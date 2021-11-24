@@ -3,6 +3,7 @@
     <Header />
     <Hero />
     <Content />
+    <Shop />
     <Footer />
   </div>
 </template>
@@ -13,6 +14,7 @@ import Header from '@/components/Header.vue'
 import Content from '@/components/Content.vue'
 import Footer from '@/components/Footer.vue'
 import Hero from '@/components/Hero.vue'
+import Shop from '@/components/Shop.vue'
   
 
 export default {
@@ -22,6 +24,7 @@ export default {
     Content,
     Footer,
     Hero,
+    Shop,
   }
 
 }
