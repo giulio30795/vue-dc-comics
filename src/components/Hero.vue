@@ -16,6 +16,7 @@ export default {
 .hero{
     height: 400px;
     background-image: url('../assets/jumbotron.jpg');
+    background-position: top;
     position: relative;
     .current{
         background-color:#0D7CEC;

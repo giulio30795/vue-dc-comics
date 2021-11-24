@@ -3,10 +3,10 @@
         <div class="container">
             <ul class="thumb-list flex">
                 <li v-for="(element, index) in comics" :key="`list-${index}`">
-                    <div class="img-container">
-                        <img :src="element.thumb" :alt="element.series">
-                    </div>
-                    <h4>{{element.series}}</h4>
+                    <Card 
+                    :immagine="element.thumb"
+                    :testo="element.series"
+                    />
                 </li>
             </ul>
         </div>
@@ -15,12 +15,15 @@
 
 <script>
 import comicsList from '@/data/dc-comics.js'
+import Card from '@/components/Card.vue'
 export default {
     name: 'Content',
-
+    components: {
+        Card,
+    },
     data(){
         return {
-            comics: comicsList
+            comics: comicsList,
         }
     }
 }
@@ -37,16 +40,16 @@ section
     li{
         width: calc(100% / 6);
         padding: .5rem;
-        .img-container{
-            height: 150px;
+        // .img-container{
+        //     height: 150px;
             
-            img{
-                object-fit: cover;
-                height: 100%;
-                width: 100%;
-                object-position: top;
-            }
-        }
+        //     img{
+        //         object-fit: cover;
+        //         height: 100%;
+        //         width: 100%;
+        //         object-position: top;
+        //     }
+        // }
     }
 }
 section {
